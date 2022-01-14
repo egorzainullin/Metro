@@ -27,7 +27,7 @@ class StationCircleView: UIView {
     { didSet { updateColor(color) } }
     
     @IBInspectable
-    var id: String = ""
+    var name: String = ""
     
     override func layoutSubviews() {
         super.layoutSubviews()
