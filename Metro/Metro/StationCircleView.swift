@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol StationCircleViewDelegate {
+    func stationClicked(_ sender: StationCircleView, id: String)
+}
+
 @IBDesignable
 class StationCircleView: UIView {
 
+    var delegate: StationCircleViewDelegate?
+    
     @IBInspectable
     var width: CGFloat = 20.0
     { didSet { updateSize(width)} }
@@ -45,5 +51,9 @@ class StationCircleView: UIView {
     func updateSize(_ width: CGFloat) {
         frame.size = CGSize(width: width, height: width)
         layer.cornerRadius = width / 2
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        delegate?.stationClicked(self, id: self.id)
     }
 }

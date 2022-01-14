@@ -21,5 +21,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         mapScrollView.setZooming()
     }
 
+    private func registerClicksOnStationsAndLabels() {
+        let stations = view.subviews.compactMap{ $0 as? StationCircleView }
+        let labels = view.subviews.compactMap{ $0 as? NameLabel }
+        // TODO: add events
+    }
 }
 

@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol NameLabelDelegate {
+    func labelClicked(_ sender: NameLabel, id: String)
+}
+
 @IBDesignable
 class NameLabel: UILabel {
 
+    var delegate: NameLabelDelegate?
+    
     @IBInspectable
     var id: String = ""
     { didSet { updateName(name)} }
@@ -27,5 +33,8 @@ class NameLabel: UILabel {
             self.text = name
         }
     }
-
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        delegate?.labelClicked(self, id: self.id)
+    }
 }
