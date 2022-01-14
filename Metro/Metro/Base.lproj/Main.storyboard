@@ -370,6 +370,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FXg-x6-fTJ"/>
                     <connections>
+                        <outlet property="contentView" destination="TSP-Eo-nTh" id="ld0-Pn-s7Q"/>
                         <outlet property="mapScrollView" destination="coa-fs-DHi" id="5gs-sd-8lz"/>
                         <segue destination="zvW-3w-Fk5" kind="show" identifier="ToPath" id="g7A-xa-eOx"/>
                     </connections>
