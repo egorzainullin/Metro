@@ -10,10 +10,10 @@ import UIKit
 class LineView: UIView {
 
     @IBInspectable
-    var from: String = ""
+    var firstNode: String = ""
     
     @IBInspectable
-    var to: String = ""
+    var secondNode: String = ""
     
     @IBInspectable
     var width: CGFloat = 20.0
@@ -27,7 +27,7 @@ class LineView: UIView {
     var color: UIColor = .blue
     { didSet { updateColor(color) } }
     
-    // Доделать
+    // TODO: Доделать
     @IBInspectable
     var angle: CGFloat = 0.0
     
