@@ -7,17 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var mapScrollView: UIScrollView!
+class ViewController: UIViewController, UIScrollViewDelegate {
+    
+    @IBOutlet weak var mapScrollView: CustomScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        initMap()
     }
 
     private func initMap() {
-        
+        mapScrollView.setZooming()
     }
 
 }

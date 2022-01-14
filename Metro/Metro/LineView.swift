@@ -27,7 +27,7 @@ class LineView: UIView {
     var color: UIColor = .blue
     { didSet { updateColor(color) } }
     
-    /// Доделать
+    // Доделать
     @IBInspectable
     var angle: CGFloat = 0.0
     

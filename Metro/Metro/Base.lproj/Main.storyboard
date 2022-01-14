@@ -16,23 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coa-fs-DHi">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coa-fs-DHi" customClass="CustomScrollView" customModule="Metro" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="414" height="653"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSP-Eo-nTh" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="800" height="800"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLs-F0-d02" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLs-F0-d02" userLabel="Parnas" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
                                                 <rect key="frame" x="390" y="50" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Parnas"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXp-s7-Pjp" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
-                                                <rect key="frame" x="390" y="96" width="20" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parnas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxl-qu-oqs" customClass="NameLabel" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="418" y="50" width="53" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="COK-cT-dlc" customClass="LineView" customModule="Metro" customModuleProvider="target">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Parnas"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="COK-cT-dlc" userLabel="Parnas - Prospect Prosvesheniya" customClass="LineView" customModule="Metro" customModuleProvider="target">
                                                 <rect key="frame" x="395" y="69" width="9" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -43,23 +51,29 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="height">
                                                         <real key="value" value="30"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="from" value="Parnas"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="to" value="Prospekt Prosvesheniya"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parnas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxl-qu-oqs">
-                                                <rect key="frame" x="418" y="50" width="53" height="21"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXp-s7-Pjp" userLabel="Prospect Prosvesheniya" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="390" y="96" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Prospect Prosvesheniya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prospekt Prosvesheniya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rq-bf-BzX" customClass="NameLabel" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="418" y="95" width="183" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Prospekt Prosvesheniya"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prospect Prosveshenia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rq-bf-BzX">
-                                                <rect key="frame" x="418" y="95" width="175" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vg6-HZ-yWT" customClass="LineView" customModule="Metro" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vg6-HZ-yWT" userLabel="Prospect Prosvesheniya - Ozerki" customClass="LineView" customModule="Metro" customModuleProvider="target">
                                                 <rect key="frame" x="395" y="115" width="9" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -70,6 +84,239 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="height">
                                                         <real key="value" value="30"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="from" value="Prospekt Prosvesheniya"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="to" value="Ozerki"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DhW-O9-FAC" userLabel="Ozerki" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="390" y="144" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Ozerki"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ozerki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl9-wL-22w" customClass="NameLabel" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="418" y="144" width="50" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Ozerki"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DdB-F9-60f" userLabel="Ozerki - Udelnaya" customClass="LineView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="395" y="163" width="9" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="from" value="Ozerki"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="to" value="Udelnaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9i-wG-azX" userLabel="Udelnaya" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="390" y="193" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Udelnaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKe-4j-pfA" userLabel="Udelnaya" customClass="NameLabel" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="418" y="193" width="79" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Udelnaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMU-NV-caq" userLabel="Udelnaya - Pionerskaya" customClass="LineView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="395" y="212" width="9" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="from" value="Udelnaya"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="to" value="Pionerskaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VyI-oc-PyM" userLabel="Pionerskaya" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="390" y="240" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Pionerskaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ozerki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYv-Dk-6DW" userLabel="Pionerskaya" customClass="NameLabel" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="418" y="240" width="109" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Pionerskaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xuD-dR-wVo" userLabel="Pionerskaya - Chornaya Rechka" customClass="LineView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="395" y="259" width="9" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="from" value="Pionerskaya"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="to" value="Chornaya Rechka"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDl-NL-G0p" userLabel="Chornaya Rechka" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="390" y="289" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Chornaya Rechka"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ozerki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRO-Wi-h24" userLabel="Chornaya Rechka" customClass="NameLabel" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="418" y="289" width="144" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Chornaya Rechka"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cm9-fW-bm0" userLabel="Chornaya Rechka - Petrogradskaya" customClass="LineView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="395" y="308" width="9" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="from" value="Pionerskaya"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="to" value="Chornaya Rechka"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8dG-op-Mht" userLabel="Chornaya Rechka" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="391" y="336" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Petrogradskaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoM-dG-qAL" userLabel="Petrogradskaya" customClass="NameLabel" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="419" y="336" width="144" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Petrogradskaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3VF-pk-Hnj" userLabel="Petrogradskaya - Gorkovskaya" customClass="LineView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="396" y="355" width="9" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="from" value="Petrogradskaya"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="to" value="Gorkovskaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75K-Mu-xiN" userLabel="Gorkovskaya" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="391" y="376" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Gorkovskaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukN-Rt-L4l" userLabel="Gorkovskaya" customClass="NameLabel" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="419" y="376" width="144" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Gorkovskaya"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lmd-AR-lPT" userLabel="Gorkovskaya - Nevskiy" customClass="LineView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="397" y="395" width="9" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="from" value="Gorkovskaya"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="to" value="Nevskiy "/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lPe-Kw-cNw" userLabel="Nevsky Prospekt" customClass="StationCircleView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="391" y="417" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Nevsky Prospekt"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOd-Fm-XoT" userLabel="Nevsky Prospekt" customClass="NameLabel" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="419" y="417" width="144" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="id" value="Nevsky Prospekt"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q7W-jk-L2d" userLabel="Nevskiy Prospekt - Sennaya Ploshad" customClass="LineView" customModule="Metro" customModuleProvider="target">
+                                                <rect key="frame" x="396" y="436" width="9" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="from" value="Nevskiy Prospekt"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="to" value="Sennaya Ploshad"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
@@ -103,7 +350,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arJ-Ut-Xcc">
                                         <rect key="frame" x="0.0" y="77.5" width="414" height="77.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Create Path"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show Path"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -123,7 +370,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FXg-x6-fTJ"/>
                     <connections>
-                        <outlet property="mapScrollView" destination="coa-fs-DHi" id="TOT-9Z-osa"/>
+                        <outlet property="mapScrollView" destination="coa-fs-DHi" id="5gs-sd-8lz"/>
                         <segue destination="zvW-3w-Fk5" kind="show" identifier="ToPath" id="g7A-xa-eOx"/>
                     </connections>
                 </viewController>
@@ -166,6 +413,35 @@
             <point key="canvasLocation" x="818.84057971014499" y="70.982142857142847"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="0Rq-bf-BzX">
+            <size key="intrinsicContentSize" width="182.5" height="20.5"/>
+        </designable>
+        <designable name="Dl9-wL-22w">
+            <size key="intrinsicContentSize" width="49.5" height="20.5"/>
+        </designable>
+        <designable name="OKe-4j-pfA">
+            <size key="intrinsicContentSize" width="71" height="20.5"/>
+        </designable>
+        <designable name="SoM-dG-qAL">
+            <size key="intrinsicContentSize" width="119" height="20.5"/>
+        </designable>
+        <designable name="UOd-Fm-XoT">
+            <size key="intrinsicContentSize" width="128.5" height="20.5"/>
+        </designable>
+        <designable name="cxl-qu-oqs">
+            <size key="intrinsicContentSize" width="52.5" height="20.5"/>
+        </designable>
+        <designable name="eRO-Wi-h24">
+            <size key="intrinsicContentSize" width="133" height="20.5"/>
+        </designable>
+        <designable name="mYv-Dk-6DW">
+            <size key="intrinsicContentSize" width="91.5" height="20.5"/>
+        </designable>
+        <designable name="ukN-Rt-L4l">
+            <size key="intrinsicContentSize" width="97.5" height="20.5"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

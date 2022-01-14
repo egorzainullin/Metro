@@ -24,10 +24,17 @@ class StationCircleView: UIView {
     @IBInspectable
     var id: String = ""
     
+    private var borderSize: CGFloat = 1
+    
+    private var borderColor: UIColor = .white
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         updateColor(color)
         updateSize(width)
+        layer.borderWidth = borderSize
+        layer.borderColor = borderColor.cgColor
+        
     }
     
     func updateColor(_ color: UIColor) {
