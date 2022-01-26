@@ -20,6 +20,18 @@ class ViewController: UIViewController {
         registerClicksOnStationsAndLabels()
     }
 
+    private func addStations() {
+        
+    }
+    
+    private func addLinesBetweenStations() {
+        
+    }
+    
+    private func addTransitions() {
+        
+    }
+    
     private func initMap() {
         mapScrollView.setZooming()
         setTap()
