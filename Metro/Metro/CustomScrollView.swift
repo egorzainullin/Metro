@@ -12,12 +12,8 @@ class CustomScrollView: UIScrollView {
     func setZooming() {
         self.showsVerticalScrollIndicator = false
         self.showsHorizontalScrollIndicator = false
-        self.maximumZoomScale = 5
-        let scrollViewFrame = self.frame
-        let scaleWidth = scrollViewFrame.size.width / self.contentSize.width
-        let scaleHeight = scrollViewFrame.size.height / self.contentSize.height
-        let minScale = min(scaleWidth, scaleHeight)
-        self.minimumZoomScale = minScale;
+        self.maximumZoomScale = 5.0
+        self.minimumZoomScale = 1.0
     }
     
 }

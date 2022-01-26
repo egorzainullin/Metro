@@ -421,27 +421,19 @@
         <designable name="Dl9-wL-22w">
             <size key="intrinsicContentSize" width="49.5" height="20.5"/>
         </designable>
-        <designable name="OKe-4j-pfA">
-            <size key="intrinsicContentSize" width="71" height="20.5"/>
-        </designable>
-        <designable name="SoM-dG-qAL">
-            <size key="intrinsicContentSize" width="119" height="20.5"/>
-        </designable>
-        <designable name="UOd-Fm-XoT">
-            <size key="intrinsicContentSize" width="128.5" height="20.5"/>
-        </designable>
+        <designable name="OKe-4j-pfA"/>
+        <designable name="SoM-dG-qAL"/>
+        <designable name="UOd-Fm-XoT"/>
         <designable name="cxl-qu-oqs">
             <size key="intrinsicContentSize" width="52.5" height="20.5"/>
         </designable>
         <designable name="eRO-Wi-h24">
-            <size key="intrinsicContentSize" width="133" height="20.5"/>
+            <size key="intrinsicContentSize" width="49.5" height="20.5"/>
         </designable>
         <designable name="mYv-Dk-6DW">
-            <size key="intrinsicContentSize" width="91.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="49.5" height="20.5"/>
         </designable>
-        <designable name="ukN-Rt-L4l">
-            <size key="intrinsicContentSize" width="97.5" height="20.5"/>
-        </designable>
+        <designable name="ukN-Rt-L4l"/>
     </designables>
     <resources>
         <systemColor name="systemBackgroundColor">

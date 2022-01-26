@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet weak var mapScrollView: CustomScrollView!
     
@@ -22,6 +22,27 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     private func initMap() {
         mapScrollView.setZooming()
+        setTap()
+    }
+    
+    private func setTap() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(onTap))
+        tapGestureRecognizer.numberOfTapsRequired = 2
+        mapScrollView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc private func onTap() {
+        if self.mapScrollView.zoomScale == 1.0 {
+            UIView.animate(withDuration: 0.1,
+                           animations: {
+                self.mapScrollView.zoomScale = 2.0
+            })
+        } else {
+            UIView.animate(withDuration: 0.1,
+                           animations: {
+                self.mapScrollView.zoomScale = 1.0
+            })
+        }
     }
 
     private func registerClicksOnStationsAndLabels() {
@@ -33,6 +54,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         for label in labels {
             label.delegate = self
         }
+    }
+}
+
+extension ViewController: UIScrollViewDelegate {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return contentView
     }
 }
 
