@@ -13,36 +13,40 @@ class Stations {
         let firstLine = getLineOneStations()
         let secondLine = getLineTwoStations()
         let thirdLine = getLineThreeStations()
-        return firstLine + secondLine + thirdLine
+        let fourthLine = getLineFourStations()
+        let fifthLine = getLineFiveStations()
+        return firstLine + secondLine + thirdLine + fourthLine + fifthLine
     }
 
-    static func getLineOneStations() -> [StationCircleView] {
-        var line: [StationCircleView] = []
+    private static func getLineOneStations() -> [StationCircleView] {
+        let line: [StationCircleView] = []
         return line
     }
 
-    static func getLineTwoStations() -> [StationCircleView] {
-        var line: [StationCircleView] = []
+    private static func getLineTwoStations() -> [StationCircleView] {
+        let line: [StationCircleView] = [
+            createStation(id: "Parnas", center: CGPoint(x: 100, y: 100), color: .blue)
+        ]
         return line
     }
 
-    static func getLineThreeStations() -> [StationCircleView] {
-        var line: [StationCircleView] = []
+    private static func getLineThreeStations() -> [StationCircleView] {
+        let line: [StationCircleView] = []
         return line
     }
 
-    static func getLineFourStations() -> [StationCircleView] {
-        var line: [StationCircleView] = []
+    private static func getLineFourStations() -> [StationCircleView] {
+        let line: [StationCircleView] = []
         return line
     }
 
-    static func getLineFiveStations() -> [StationCircleView] {
-        var line: [StationCircleView] = []
+    private static func getLineFiveStations() -> [StationCircleView] {
+        let line: [StationCircleView] = []
         return line
     }
 
     static func createStation(id: String, center: CGPoint, color: UIColor) -> StationCircleView {
-        let station = StationCircleView()
+        let station = StationCircleView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         station.center = center
         station.id = id
         station.color = color

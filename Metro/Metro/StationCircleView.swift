@@ -43,12 +43,12 @@ class StationCircleView: UIView {
         
     }
     
-    func updateColor(_ color: UIColor) {
+    private func updateColor(_ color: UIColor) {
         backgroundColor = color
         layoutIfNeeded()
     }
     
-    func updateSize(_ width: CGFloat) {
+    private func updateSize(_ width: CGFloat) {
         frame.size = CGSize(width: width, height: width)
         layer.cornerRadius = width / 2
     }

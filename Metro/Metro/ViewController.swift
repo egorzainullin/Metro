@@ -17,11 +17,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         initMap()
+        addStations()
         registerClicksOnStationsAndLabels()
     }
 
     private func addStations() {
-        
+        let stations = Stations.getStations()
+        for station in stations {
+            debugPrint(station.id)
+            view.addSubview(station)
+        }
     }
     
     private func addLinesBetweenStations() {
