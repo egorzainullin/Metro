@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Схема-->
+        <!--View Controller-->
         <scene sceneID="HYa-t8-zGv">
             <objects>
-                <viewController title="Схема" id="j5F-Kf-xFW" customClass="ViewController" customModule="Metro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="j5F-Kf-xFW" customClass="ViewController" customModule="Metro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M0V-VM-zAE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +52,9 @@
                                         <rect key="frame" x="0.0" y="39" width="414" height="38.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Show Path"/>
+                                        <connections>
+                                            <segue destination="zvW-3w-Fk5" kind="show" id="g0m-fD-txm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -73,24 +76,23 @@
                     <connections>
                         <outlet property="contentView" destination="TSP-Eo-nTh" id="ld0-Pn-s7Q"/>
                         <outlet property="mapScrollView" destination="coa-fs-DHi" id="5gs-sd-8lz"/>
-                        <segue destination="zvW-3w-Fk5" kind="show" identifier="ToPath" id="g7A-xa-eOx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAY-Gc-uHE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1728.985507246377" y="70.982142857142847"/>
         </scene>
-        <!--Маршрут-->
+        <!--Path-->
         <scene sceneID="kT9-W0-m8t">
             <objects>
-                <viewController id="zvW-3w-Fk5" sceneMemberID="viewController">
+                <viewController title="Path" id="zvW-3w-Fk5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUw-WO-glo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="5Ht-D9-3ca"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Маршрут" id="7lF-Yo-DKp"/>
+                    <navigationItem key="navigationItem" title="Path" id="7lF-Yo-DKp" userLabel="Path"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAr-2R-APh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
