@@ -13,7 +13,7 @@ class CustomScrollView: UIScrollView {
         self.showsVerticalScrollIndicator = false
         self.showsHorizontalScrollIndicator = false
         self.maximumZoomScale = 5.0
-        self.minimumZoomScale = 0.5
+        self.minimumZoomScale = 1.0
     }
     
 }
