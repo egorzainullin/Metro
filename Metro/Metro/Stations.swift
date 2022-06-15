@@ -25,7 +25,9 @@ class Stations {
 
     private static func getLineTwoStations() -> [StationCircleView] {
         let line: [StationCircleView] = [
-            createStation(id: "Parnas", center: CGPoint(x: 100, y: 100), color: .blue)
+            createStation(id: "Parnas", center: CGPoint(x: 100, y: 100), color: .blue),
+            createStation(id: "Prospekt Prosvescheniya", center: CGPoint(x: 100, y: 120), color: .blue),
+            createStation(id: "Ozerki", center: CGPoint(x: 100, y: 140), color: .blue)
         ]
         return line
     }

@@ -17,7 +17,7 @@ class StationCircleView: UIView {
     var delegate: StationCircleViewDelegate?
     
     @IBInspectable
-    var width: CGFloat = 20.0
+    var width: CGFloat = 10.0
     { didSet { updateSize(width)} }
     
     @IBInspectable
